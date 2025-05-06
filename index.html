@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USB Recycle - Tecnología Reacondicionada Sostenible</title>
+  <style>
+    :root {
+      --primary: #2e7d32;
+      --secondary: #81c784;
+      --accent: #ff8f00;
+      --light: #f5f5f5;
+      --dark: #212121;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .logo {
+      height: 60px;
+      width: auto;
+    }
+
+    nav {
+      background-color: var(--secondary);
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .hero {
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+
+    .mission {
+      background-color: var(--light);
+      padding: 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .products, .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--accent);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e65100;
+    }
+
+    .contact-section {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      margin: 3rem 0;
+    }
+
+    .contact-info {
+      flex: 1;
+    }
+
+    .instagram-preview {
+      flex: 1;
+      text-align: center;
+    }
+
+    .instagram-preview img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .instagram-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 2rem;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .products, .benefits {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo-container">
+    <img src="" alt="Logo USB Recycle" class="logo">
+    <h1>USB RECYCLE</h1>
+  </div>
+  <p>"Reciclamos pero no juzgamos"</p>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#productos">Productos</a>
+  <a href="#beneficios">Beneficios</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section class="hero" id="inicio">
+  <h2>Tecnología Reacondicionada, Planeta Sostenible</h2>
+  <p>Reduciendo los residuos electrónicos y llevando tecnología accesible a todos</p>
+  <a href="#productos" class="btn">Ver Productos</a>
+</section>
+
+<div class="container">
+  <section class="mission" id="nosotros">
+    <h2>Nuestra Misión</h2>
+    <p>Minimizar el impacto ambiental de los residuos electrónicos, ofreciendo tecnología accesible y de calidad.</p>
+
+    <h3>Visión</h3>
+    <p>Transformar el mundo en un lugar de basura electrónica cero.</p>
+
+    <h3>Valores</h3>
+    <ul>
+      <li><strong>Compromiso:</strong> Reducción de residuos electrónicos y el cuidado del medio ambiente.</li>
+      <li><strong>Responsabilidad/Honestidad:</strong> Operamos con ética y transparencia en cada etapa del proceso.</li>
+      <li><strong>Empatía:</strong> Proporcionamos tecnología funcional y económica para todos.</li>
+    </ul>
+
+    <h3>Objetivo SMART</h3>
+    <p>Incrementar en un 25% las ventas de hardware reacondicionado entre personas de 18 a 45 años en Argentina, a través de campañas de concientización ambiental en redes sociales y promociones específicas, en un plazo de 12 meses.</p>
+  </section>
+
+  <section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45" alt="Laptops reacondicionadas">
+        <div class="card-content">
+          <h3>Laptops Reacondicionadas</h3>
+          <p>Equipos portátiles completamente funcionales con garantía, a una fracción del precio original.</p>
+          <a href="#" class="btn">Ver Opciones</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df" alt="Computadoras de escritorio">
+        <div class="card-content">
+          <h3>PCs de Escritorio</h3>
+          <p>Sistemas completos para oficina o hogar, configurados según tus necesidades.</p>
+          <a href="#" class="btn">Ver Opciones</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1587202372775-e229f1723e1b" alt="Componentes electrónicos">
+
+        <div class="card-content">
+          <h3>Componentes y Periféricos</h3>
+          <p>Monitores, teclados, mouse y componentes internos para reparación o actualización.</p>
+          <a href="#" class="btn">Ver Opciones</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="benefits">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7" alt="Ahorro económico">
+        <div class="card-content">
+          <h3>Ahorro Económico</h3>
+          <p>Productos tecnológicos con hasta 70% de descuento sobre el precio original, con la misma funcionalidad.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b" alt="Impacto ambiental">
+        <div class="card-content">
+          <h3>Impacto Ambiental</h3>
+          <p>Cada producto comprado evita que más residuos electrónicos contaminen nuestro planeta.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3" alt="Garantía y seguridad">
+        <div class="card-content">
+          <h3>Garantía y Seguridad</h3>
+          <p>Todos nuestros productos pasan rigurosos controles de calidad y borrado seguro de datos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contact-section">
+      <div class="contact-info">
+        <p>¿Tienes hardware electrónico que ya no usas? ¡Podemos darle una segunda vida!</p>
+        <p>Contáctanos para donaciones, compras o más información sobre nuestros servicios.</p>
+        <a href="https://www.instagram.com/usb_recycle" class="btn" target="_blank">Síguenos en Instagram</a>
+        <p>Email: info@usbrecycle.com</p>
+        <p>Teléfono: +54 11 1234-5678</p>
+      </div>
+      <div class="instagram-preview">
+        <img src="https://via.placeholder.com/400x500/e4405f/ffffff?text=Instagram+Preview" alt="Vista previa de Instagram">
+        <a href="https://www.instagram.com/usb_recycle" class="instagram-link" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#E4405F">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          @usb_recycle
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="social-links">
+    <a href="https://www.instagram.com/usb_recycle" target="_blank">Instagram</a>
+    <a href="#" target="_blank">Facebook</a>
+    <a href="#" target="_blank">Twitter</a>
+  </div>
+  <p>USB Recycle &copy; 2023 - Todos los derechos reservados</p>
+  <p>Proyecto académico - Organización de Empresas - Ing. en Informática</p>
+</footer>
+</body>
+</html>
